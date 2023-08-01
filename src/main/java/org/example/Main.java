@@ -16,12 +16,12 @@ public class Main {
             optionChoice = scanner.nextLine().toUpperCase().charAt(0);
 
             if(optionChoice == 'A') {
-                System.out.println("Enter the string to add:");
+                System.out.println("Enter the string to add");
                 String itemToAdd = scanner.nextLine();
                 myList.add(itemToAdd);
             } else if(optionChoice == 'D') {
                 if (myList.isEmpty()) {
-                    System.out.println("List is empty.");
+                    System.out.println("List is Empty!");
                 } else {
                     System.out.println("Enter the index of item to remove:");
                     int indexToRemove = getRangedInt(0, myList.size() - 1);
